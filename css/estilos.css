@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*importa la fuente "Montserrat" desde Google Fonts. */
+* {
+    /*Establece que todas las etiquetas HTML dentro de la página no tendrán márgenes ni rellenos. */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*Establece que el elemento <html>(el contenedor principal de toda la página) ocupará el 100% del ancho y el 100% de la altura de la ventana del navegador (viewport).*/
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    /*Agrega un relleno de 20 píxeles en todas las direcciones dentro del <header>*/
+}
+
+header .header-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+header .container-p {
+    display: flex;
+    justify-content: space-around;
+    /*Distribuye el espacio disponible dentro del contenedor .container-p de manera uniforme */
+    align-items: center;
+    /*Centra verticalmente los elementos */
+    width: 50%;
+}
+
+header .container-p p {
+    font-family: "Montserrat", sans-serif;
+    /*Esta declaración especifica que la fuente principal para el texto será "Montserrat".*/
+    font-weight: 600;
+    /* Esta declaración establece el grosor de la fuente en 600*/
+    display: flex;
+    /* Esta declaración establece el contenedor como un contenedor flexible*/
+    align-items: center;
+}
+
+header .container-logo {
+    width: 50px;
+    height: 50px;
+}
+
+header .container-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /*Esta declaración especifica que el contenido (en este caso, una imagen) dentro del elemento <img> debe ajustarse dentro de su contenedor manteniendo su relación de aspecto original. */
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+/* section imagen */
+
+.container-img {
+    width: 100%;
+    padding-bottom: 100px;
+    /* se agregará un espacio de relleno de 100 píxeles en la parte inferior del elemento.*/
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main */
+
+main {
+    padding-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*establece que los elementos se apilan uno encima del otro */
+    align-items: center;
+    background: #948ABC;
+    /*el color de fondo del elemento será un tono específico de gris azulado.*/
+    padding: 50px 0;
+    gap: 20px;
+    /*agrega espacio entre los elementos*/
+}
+
+main h2 {
+    width: 90%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    /*el tamaño del texto será de 25 píxeles.*/
+    color: #444;
+}
+
+main section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* puede envolverse en múltiples líneas si no tienen suficiente espacio horizontal dentro del contenedor.*/
+    gap: 15px;
+    width: 100%;
+}
+
+main .start {
+    display: flex;
+    justify-content: start;
+    width: 95%;
+}
+
+main section article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+}
+
+main section article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+main section article p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+}
+
+/* mapa */
+
+.mapa {
+    width: 90%;
+    padding: 30px;
+}
+
+.mapa figure {
+    width: 80%;
+}
+
+.mapa figure img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+}
+
+/* fOOTER  */
+
+footer {
+    padding: 30px;
+    background: #3A328A;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+footer .container-article {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+footer .container-article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF7300;
+    padding: 0px 15px;
+    border-radius: 6px;
+}
+
+footer .section-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    padding: 30px 0;
+}
+
+footer .section-footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .section-footer div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .section-footer div ul li {
+    line-height: 25px;
+}
+
+footer .ul-contacto {
+    list-style: none
+}
+
+footer .footer-icons {
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+}
+
+footer .footer-icons figure {
+    width: 30px;
+    height: 30px;
+    display: inline;
+}
+
+footer .footer-icons figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
